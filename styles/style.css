@@ -20,8 +20,7 @@
 }
 
 .header__links-list-item {
-  font-size: 18px;
-  text-underline-position: under;
+  list-style: circle;
 }
 
 .header__links-list-item_no-bullit {
@@ -29,11 +28,14 @@
 }
 
 .header__link {
+  font-size: 18px;
   letter-spacing: 0.18px;
+  text-underline-position: under;
 }
 
 .header__link_active {
   text-decoration: none;
+  letter-spacing: 0;
 }
 
 .header__logo {
@@ -42,8 +44,7 @@
   height: 105px;
 }
 
-/* .header__logo-image {
-} */
+/* .header__logo-image {} */
 
 .address {
   display: grid;
@@ -69,7 +70,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
-  z-index: -2;
+  z-index: 1;
 }
 
 .overlay {
@@ -133,6 +134,7 @@
   height: 51px;
   border: 1px solid #fff;
   background-color: rgb(0 0 0 / 0);
+  font-family: Raleway, sans-serif;
   font-size: 22px;
   text-transform: uppercase;
   font-weight: normal;
@@ -168,39 +170,38 @@
 
 .card-link {
   display: block;
-  height: 100%;
   position: relative;
-  z-index: -2;
+  height: 100%;
+  z-index: 1;
   text-decoration: none;
 }
 
 .card {
   display: flex;
   flex-direction: column;
+  height: 100%;
   justify-content: space-between;
   max-width: 334px;
-  height: 100%;
-  padding: 51px 40px 48px;
+  /* padding: 51px 40px 48px; */
+  font-size: 20px;
   color: #fff;
   line-height: 1.2;
 }
 
 .card_type_film {
   background: #000 url(../images/card-lot-01.jpg) center / cover;
-  z-index: -1;
 }
 
 .card_type_book {
   background: #000 url(../images/card-lot-02.jpg) no-repeat center / cover;
-  z-index: -1;
 }
 
 .card_type_picture {
   background: #000 url(../images/card-lot-03.jpg) no-repeat center / cover;
-  z-index: -1;
 }
 
 .card__title {
+  padding: 51px 40px 0;
   font-size: 22px;
   text-transform: uppercase;
   text-decoration: underline;
@@ -209,7 +210,7 @@
 }
 
 .card__text {
-  font-size: 20px;
+  padding: 0 40px 48px;
 }
 
 .lots__look-more-link {
@@ -243,11 +244,10 @@
   width: 240px;
   height: 240px;
   align-items: center;
-  border-radius: 100%;
+  border-radius: 50%;
 }
 
-/* .about__logo-image {
-} */
+/* .about__logo-image {} */
 
 .about__title {
   padding: 102px 0 75px;
